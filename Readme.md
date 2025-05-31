@@ -24,7 +24,9 @@ A Go application that fetches daily stock market data from Alpha Vantage API and
    cd financial-data-fetcher
    ```
 2. Create a .env file in the root directory with your API key:
-  ``` API_KEY=your_alpha_vantage_api_key
+  ```
+   API_KEY=your_alpha_vantage_api_key
+
   ```
 
 3. Build and Run the APP 
@@ -33,10 +35,12 @@ A Go application that fetches daily stock market data from Alpha Vantage API and
     ./fetcher
     ```
 ## Architecture 
-financial-data-fetcher/
-├── internal/
-│   ├── api/            # API client implementation
-│   ├── domain/         # Data models
-│   ├── processor/      # Business logic and processing
-│   └── storage/        # Data storage interfaces and implementations
-└── main.go             # Application entry point
+    ```
+    financial-data-fetcher/
+    ├── internal/
+    │   ├── api/            # API client implementation
+    │   ├── domain/         # Data models
+    │   ├── processor/      # Business logic and processing
+    │   └── storage/        # Data storage interfaces and implementations
+    └── main.go             # Application entry point
+    ```
